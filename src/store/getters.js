@@ -3,7 +3,7 @@
  * Created on lucky 2020/12/14  22:03
  */
 const getter = {
-  NameGetter(state){
+  NameGetter (state) {
     return state.name
   }
 }

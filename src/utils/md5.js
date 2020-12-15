@@ -1,5 +1,5 @@
 import Vue from 'vue'
-const  Event = new Vue()
+const Event = new Vue()
 export default Event
 /* eslint-disable */
 function MD5(string){

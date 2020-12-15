@@ -8,11 +8,11 @@ export default {
     return {
     }
   },
-  created() {
+  created () {
     this.showSDK()
   },
-  methods:{
-    showSDK(){
+  methods: {
+    showSDK () {
       console.log(this.$store.state.NIM)
     }
   }

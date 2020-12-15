@@ -2,34 +2,35 @@
  * Created by 简小
  * Created on lucky 2020/12/14  21:58
  */
+import nimConfig from '../config/nim-config'
 const state = {
-  toAvatar:'',
-  videoObj:{
-    online:false,
-    account:'jiandan',
-    parallel:true,
+  toAvatar: '',
+  videoObj: {
+    online: false,
+    account: 'jiandan',
+    parallel: true
   },
   profile: {
-    account: "",
-    nick: "",
-    sign: "",
-    avatar: "",
-    email:""
+    account: '',
+    nick: '',
+    sign: '',
+    avatar: '',
+    email: ''
   },
-  //编辑好的图片地址
-  outputFileURL:'',
+  // 编辑好的图片地址
+  outputFileURL: '',
   // 截图图片BASE64
-  dataURL:'',
+  dataURL: '',
   // 接收视频
-  accept:0,
+  accept: 0,
   // 控制视频弹窗显示
-  ensureVideoCount:0,
-  //-- 视频状态控制 ###################
-  //是否全屏
-  isFullScreen:false,
+  ensureVideoCount: 0,
+  // -- 视频状态控制 ###################
+  // 是否全屏
+  isFullScreen: false,
   // 是否截图
   isSnapshot: false,
-  //是否被叫
+  // 是否被叫
   isCalled: false,
   // 发起呼叫
   calling: false,
@@ -44,19 +45,19 @@ const state = {
   // 音频地址
   audioUrl: '',
 
-  //--以上是全局状态控制#######################
-  NIM:null,
-  MD5:null,
-  nim:null,
-  data:{},
-  NetCall:null,
-  netcall:null,
-  tempSession:{
-    tempObj:{
-      scene: "p2p",
-      to: "simple1"
+  // --以上是全局状态控制#######################
+  NIM: null,
+  MD5: null,
+  nim: null,
+  data: {},
+  NetCall: null,
+  netcall: null,
+  tempSession: {
+    tempObj: {
+      scene: 'p2p',
+      to: nimConfig.toFriend
     },
-    tempMsgs:''
-  },
+    tempMsgs: ''
+  }
 }
-export default state;
+export default state

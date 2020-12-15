@@ -9,19 +9,19 @@
 </template>
 
 <script>
-  export default {
-    name: "HidePlayer",
-    data() {
-      return {
-        localAudioURL:''
-      }
-    },
-    watch:{
-      '$store.state.audioUrl':function (val) {
-          this.localAudioURL = val
-      }
+export default {
+  name: 'HidePlayer',
+  data () {
+    return {
+      localAudioURL: ''
+    }
+  },
+  watch: {
+    '$store.state.audioUrl': function (val) {
+      this.localAudioURL = val
     }
   }
+}
 </script>
 
 <style scoped>

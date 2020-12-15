@@ -4,15 +4,15 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 
-Vue.config.productionTip = false
-
 import Vuex from 'vuex'
-Vue.use(Vuex)
-import ElementUI from 'element-ui';
-import 'element-ui/lib/theme-chalk/index.css';
+import ElementUI from 'element-ui'
+import 'element-ui/lib/theme-chalk/index.css'
+import store from './store/store'
 
-Vue.use(ElementUI);
-import store from "./store/store";
+Vue.config.productionTip = false
+Vue.use(Vuex)
+
+Vue.use(ElementUI)
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
@@ -20,7 +20,7 @@ new Vue({
   store,
   components: { App },
   template: '<App/>',
-  created() {
+  created () {
     this.$store.dispatch('initUtils')
-  },
+  }
 })
